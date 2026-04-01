@@ -19,6 +19,7 @@
                 --grey-green: #7A8B6C;
                 --blue: #2B8FD8;
                 --ochre: #E8A820;
+                --red: #e94862;
                 --dark: #1C1C1C;
                 --mid: #5A5A5A;
                 --light: #D8D4CC;
@@ -152,7 +153,6 @@
             .nav-brand-name {
                 font-size: 1em;
                 font-weight: 700;
-                /* letter-spacing: 0.08em; */
                 text-transform: uppercase;
             }
 
@@ -299,7 +299,6 @@
                 font-size: 6em;
                 font-weight: 700;
                 line-height: 1;
-                letter-spacing: -0.02em;
                 margin-bottom: 28px;
             }
 
@@ -328,7 +327,6 @@
                 width: 56px;
                 font-weight: 700;
                 color: var(--dark);
-                letter-spacing: 0.05em;
             }
 
             /* ═══════════════════════════════════════════
@@ -362,7 +360,6 @@
                 font-size: 13px;
                 color: var(--mid);
                 font-variant-numeric: tabular-nums;
-                letter-spacing: 0.05em;
                 margin-bottom: 14px;
             }
 
@@ -379,7 +376,6 @@
                 width: 64px;
                 font-weight: 700;
                 color: var(--dark);
-                letter-spacing: 0.03em;
             }
 
             /* ═══════════════════════════════════════════
@@ -407,7 +403,6 @@
             .type-label {
                 font-size: 10px;
                 font-weight: 700;
-                letter-spacing: 0.15em;
                 text-transform: uppercase;
                 color: var(--blue);
                 display: block;
@@ -424,14 +419,12 @@
                 font-size: 72px;
                 font-weight: 700;
                 line-height: 0.92;
-                letter-spacing: -0.02em;
             }
 
             .display-2 {
                 font-size: 48px;
                 font-weight: 700;
                 line-height: 0.96;
-                letter-spacing: -0.01em;
             }
 
             .heading-1 {
@@ -474,7 +467,6 @@
             .caption {
                 font-size: 11px;
                 font-weight: 700;
-                letter-spacing: 0.12em;
                 text-transform: uppercase;
                 color: var(--mid);
             }
@@ -482,7 +474,6 @@
             .label-text {
                 font-size: 11px;
                 font-weight: 700;
-                letter-spacing: 0.15em;
                 text-transform: uppercase;
                 color: var(--blue);
             }
@@ -506,7 +497,7 @@
             .btn-row-label {
                 font-size: 10px;
                 font-weight: 700;
-                letter-spacing: 0.18em;
+
                 text-transform: uppercase;
                 color: var(--mid);
                 margin-bottom: 16px;
@@ -519,7 +510,6 @@
                 font-family: var(--font);
                 font-size: 12px;
                 font-weight: 700;
-                letter-spacing: 0.1em;
                 text-transform: uppercase;
                 text-decoration: none;
                 cursor: pointer;
@@ -675,7 +665,6 @@
             .card-eyebrow {
                 font-size: 10px;
                 font-weight: 700;
-                letter-spacing: 0.15em;
                 text-transform: uppercase;
                 color: var(--blue);
                 margin-bottom: 12px;
@@ -707,7 +696,6 @@
             .card-footer-label {
                 font-size: 11px;
                 font-weight: 700;
-                letter-spacing: 0.08em;
                 text-transform: uppercase;
                 color: var(--mid);
             }
@@ -772,6 +760,165 @@
                 color: var(--blue);
             }
 
+            /* Info card variant — payphone instruction style */
+            .card-info {
+                background: var(--white);
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                max-width: 420px;
+                border: 1px solid var(--light);
+            }
+
+            .card-info-header {
+                background: var(--blue-dark);
+                color: #fff;
+                padding: 28px 32px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .card-info-header-icon {
+                flex-shrink: 0;
+                width: 64px;
+                height: 64px;
+                background: var(--blue-dark);
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .card-info-header-icon svg {
+                width: 40px;
+                height: 40px;
+                fill: #fff;
+            }
+
+            .card-info-header-text {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+            }
+
+            .card-info-header-text .line {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 1.25;
+            }
+
+            .card-info-header-text .line strong {
+                font-weight: 700;
+            }
+
+            .card-info-header-text .line-lg {
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 1.2;
+            }
+
+            .card-info-body {
+                padding: 20px 32px 28px;
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .card-info-subtitle {
+                font-size: 12px;
+                font-weight: 400;
+                color: var(--mid);
+                margin-bottom: 16px;
+            }
+
+            .card-info-section-title {
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: var(--blue-dark);
+                /* padding: 8px 0; */
+                border-top: 2px solid var(--blue-dark);
+                margin-top: 0.75em;
+                margin-bottom: 0.5em;
+            }
+
+            .card-info-section-title:first-child {
+                margin-top: 0;
+            }
+
+            .card-info-group-title {
+                font-size: 13px;
+                font-weight: 700;
+                color: var(--dark);
+                margin-bottom: 4px;
+            }
+
+            .card-info-row {
+                display: flex;
+                align-items: baseline;
+                gap: 4px;
+                font-size: 13px;
+                line-height: 1.65;
+                color: var(--dark);
+            }
+
+            .card-info-row .label {
+                white-space: nowrap;
+            }
+
+            .card-info-row .dots {
+                flex: 1;
+                border-bottom: 1px dotted var(--mid);
+                min-width: 20px;
+                margin-bottom: 3px;
+            }
+
+            .card-info-row .value {
+                white-space: nowrap;
+                font-weight: 700;
+            }
+
+            .card-info-row .highlight {
+                display: inline-block;
+                background: var(--ochre);
+                color: #fff;
+                font-weight: 700;
+                font-size: 11px;
+                padding: 1px 7px;
+                border-radius: 3px;
+            }
+
+            .card-info-note {
+                font-size: 12px;
+                color: var(--mid);
+                margin-top: 4px;
+                margin-bottom: 4px;
+                font-style: italic;
+            }
+
+            .card-info-callout {
+                margin-top: 16px;
+                padding-top: 12px;
+                border-top: 1px solid var(--light);
+                font-size: 13px;
+                color: var(--dark);
+            }
+
+            .card-info-callout strong {
+                color: var(--ochre-dark);
+                font-weight: 700;
+            }
+
+            .card-info-callout .card-info-location {
+                display: block;
+                font-size: 12px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: var(--mid);
+                margin-top: 4px;
+            }
+
             /* ═══════════════════════════════════════════
        06 — FORMS
     ═══════════════════════════════════════════ */
@@ -818,7 +965,6 @@
             .form-label {
                 font-size: 10px;
                 font-weight: 700;
-                letter-spacing: 0.15em;
                 text-transform: uppercase;
                 color: var(--dark);
             }
@@ -851,7 +997,7 @@
             }
 
             .form-input.is-error {
-                border-color: #C0392B;
+                border-color: var(--red);
             }
 
             .form-hint {
@@ -860,7 +1006,7 @@
             }
 
             .form-hint.is-error {
-                color: #C0392B;
+                color: var(--red);
                 font-weight: 700;
             }
 
@@ -931,7 +1077,6 @@
             .stripe-demo-label {
                 font-size: 10px;
                 font-weight: 700;
-                letter-spacing: 0.18em;
                 text-transform: uppercase;
                 color: var(--mid);
             }
@@ -969,7 +1114,6 @@
             .split-panel-label {
                 font-size: 10px;
                 font-weight: 700;
-                letter-spacing: 0.2em;
                 text-transform: uppercase;
             }
 
@@ -1008,7 +1152,6 @@
             .nav-example-label {
                 font-size: 10px;
                 font-weight: 700;
-                letter-spacing: 0.18em;
                 text-transform: uppercase;
                 color: var(--mid);
                 margin-bottom: 12px;
@@ -1029,7 +1172,6 @@
                 gap: 10px;
                 font-size: 13px;
                 font-weight: 700;
-                letter-spacing: 0.06em;
                 text-transform: uppercase;
             }
 
@@ -1043,7 +1185,6 @@
             .nav-demo-links li a {
                 font-size: 11px;
                 font-weight: 700;
-                letter-spacing: 0.1em;
                 text-transform: uppercase;
                 text-decoration: none;
                 opacity: 0.6;
@@ -1057,7 +1198,6 @@
                 font-family: var(--font);
                 font-size: 10px;
                 font-weight: 700;
-                letter-spacing: 0.12em;
                 text-transform: uppercase;
                 border: none;
                 padding: 9px 20px;
@@ -1130,7 +1270,6 @@
             .alert-title {
                 font-size: 12px;
                 font-weight: 700;
-                letter-spacing: 0.06em;
                 text-transform: uppercase;
                 margin-bottom: 4px;
             }
@@ -1148,7 +1287,6 @@
                 font-family: var(--font);
                 font-size: 10px;
                 font-weight: 700;
-                letter-spacing: 0.12em;
                 text-transform: uppercase;
                 padding: 0;
                 margin-top: 2px;
@@ -1248,7 +1386,6 @@
             .badge-size-label {
                 font-size: 10px;
                 font-weight: 700;
-                letter-spacing: 0.14em;
                 text-transform: uppercase;
                 color: var(--mid);
             }
@@ -1349,7 +1486,6 @@
             .footer-brand-name {
                 font-size: 14px;
                 font-weight: 700;
-                letter-spacing: 0.1em;
                 text-transform: uppercase;
                 margin-top: 16px;
                 margin-bottom: 4px;
@@ -1364,7 +1500,6 @@
             .footer-col-title {
                 font-size: 10px;
                 font-weight: 700;
-                letter-spacing: 0.2em;
                 text-transform: uppercase;
                 color: rgba(255, 255, 255, 0.4);
                 margin-bottom: 20px;
@@ -1403,7 +1538,6 @@
             .footer-copy {
                 font-size: 11px;
                 color: rgba(255, 255, 255, 0.25);
-                letter-spacing: 0.06em;
             }
 
             /* ═══════════════════════════════════════════
@@ -1457,7 +1591,6 @@
                 background: rgba(0, 0, 0, 0.06);
                 color: var(--dark);
                 padding: 2px 8px;
-                letter-spacing: 0.03em;
             }
         </style>
     </head>
@@ -1905,6 +2038,80 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Info card (payphone instruction style) -->
+                <div style="margin-top:64px;">
+                    <p class="section-desc" style="margin-top:0;">
+                        The info card draws from Bell System payphone instruction placards —
+                        a blue header block with icon, structured body with section dividers, and
+                        dot-leader rows for key-value data.
+                    </p>
+                    <div class="card-info">
+                        <div class="card-info-header">
+                            <div class="card-info-header-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z" />
+                                </svg>
+                            </div>
+                            <div class="card-info-header-text">
+                                <span class="line">Authorized <strong>access</strong></span>
+                                <span class="line">& service calls only.</span>
+                                <span class="line-lg">No public lines.</span>
+                            </div>
+                        </div>
+                        <div class="card-info-body">
+                            <div class="card-info-subtitle">Internal operations only</div>
+
+                            <div class="card-info-section-title">Authorized Calls</div>
+                            <div class="card-info-group-title">Trunk &amp; Facility Lines</div>
+                            <div class="card-info-row">
+                                <span class="label">Within this District</span>
+                                <span class="dots"></span>
+                                <span class="value"><span class="highlight">0+</span> Number</span>
+                            </div>
+                            <div class="card-info-row">
+                                <span class="label">Outside this District</span>
+                                <span class="dots"></span>
+                                <span class="value"><span class="highlight">0+</span> Area + Number</span>
+                            </div>
+                            <div class="card-info-note">Operator-assisted rates apply to all calls.</div>
+
+                            <div class="card-info-section-title">Free Calls</div>
+                            <div class="card-info-group-title">Directory Assistance</div>
+                            <div class="card-info-row">
+                                <span class="label">Local (District 4)</span>
+                                <span class="dots"></span>
+                                <span class="value">411</span>
+                            </div>
+                            <div class="card-info-row">
+                                <span class="label">Within this Area Code</span>
+                                <span class="dots"></span>
+                                <span class="value">555-1212</span>
+                            </div>
+                            <div class="card-info-row">
+                                <span class="label">Outside this Area Code</span>
+                                <span class="dots"></span>
+                                <span class="value">Area + 555-1212</span>
+                            </div>
+                            <div class="card-info-row">
+                                <span class="label"><strong>Repair Service</strong></span>
+                                <span class="dots"></span>
+                                <span class="value">526-9942</span>
+                            </div>
+                            <div class="card-info-row">
+                                <span class="label"><strong>Toll Free 800 Numbers</strong></span>
+                                <span class="dots"></span>
+                                <span class="value">800 + Number</span>
+                            </div>
+
+                            <div class="card-info-callout">
+                                <strong>SOS dial 911</strong> for Emergency help
+                                <span class="card-info-location">27 Iowa St., Iowa City</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -2293,7 +2500,7 @@
                     <!-- On grey-green -->
                     <div class="badge-on-gg">
                         <span
-                            style="font-size:10px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:rgba(244,242,238,0.5); min-width:180px;">On
+                            style="font-size:10px; font-weight:700;  text-transform:uppercase; color:rgba(244,242,238,0.5); min-width:180px;">On
                             Grey-Green</span>
                         <svg width="48" height="48" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                             <g fill-rule="evenodd" clip-rule="evenodd">
@@ -2320,7 +2527,7 @@
                     <!-- On dark -->
                     <div class="badge-on-dark">
                         <span
-                            style="font-size:10px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:rgba(255,255,255,0.35); min-width:180px;">On
+                            style="font-size:10px; font-weight:700; text-transform:uppercase; color:rgba(255,255,255,0.35); min-width:180px;">On
                             Dark</span>
                         <svg width="48" height="48" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                             <g fill-rule="evenodd" clip-rule="evenodd">
@@ -2340,7 +2547,7 @@
                     <!-- On blue -->
                     <div class="badge-on-blue">
                         <span
-                            style="font-size:10px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:rgba(255,255,255,0.5); min-width:180px;">On
+                            style="font-size:10px; font-weight:700;  text-transform:uppercase; color:rgba(255,255,255,0.5); min-width:180px;">On
                             Bell Blue</span>
                         <svg width="48" height="48" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                             <g fill-rule="evenodd" clip-rule="evenodd">
