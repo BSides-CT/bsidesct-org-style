@@ -279,7 +279,7 @@
             }
 
             .hero-right {
-                background: var(--grey-green);
+                background: var(--white);
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -1640,6 +1640,16 @@
             ───────────────────────────────────────────────────── -->
         <section class="hero" id="identity">
             <div class="hero-split">
+                <div class="hero-right">
+                    <!-- Large Bell mark on grey-green -->
+                    <svg width="480" height="480" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <g fill-rule="evenodd" clip-rule="evenodd">
+                            <path fill="transparent" d="M0 0h192.756v192.756H0V0z" />
+                            <path fill="#000"
+                                d="M96.378 189.922c-51.652 0-93.543-41.893-93.543-93.544 0-51.652 41.892-93.543 93.543-93.543s93.544 41.892 93.544 93.543-41.893 93.544-93.544 93.544zm.012-16.301c42.639 0 77.233-34.592 77.233-77.232 0-42.639-34.594-77.231-77.233-77.231S19.158 53.75 19.158 96.389c0 42.64 34.593 77.232 77.232 77.232zm58.331-65.656l-.021 26.508-48.078.074-.01 13.023H86.304l-.11-13.023-48.037.271.038-26.869c11.471-2.162 14.738-9.426 15.294-16.027l2.682-31.802c.579-8.305 7.003-12.964 13.155-13.739 12.805-1.611 16.256-.941 16.258-1.086l.142-11.43h21.462l.141 11.443c4.348.108 12.623.649 16.258 1.073 8.469.987 12.643 7.646 13.156 13.739l2.682 31.802c.286 14.129 15.3 16.277 15.296 16.043zm-84.406-12c-1.365 14.533-11.31 16.349-11.31 16.435l-.032 4.418h74.896l.057-4.59c-9.99-4.709-10.762-10.42-11.279-15.918l-2.299-24.486c-.258-6.276-4.973-8.872-9.469-9.214a190.244 190.244 0 0 0-14.414-.565c-4.817 0-9.634.2-14.414.565-4.157.056-8.84 2.512-9.469 9.214l-2.267 24.141z" />
+                        </g>
+                    </svg>
+                </div>
                 <div class="hero-left">
                     <p class="hero-eyebrow">Bell System — Web Design Standards</p>
                     <h1 class="hero-h1">A System<br>for Every<br>Surface.</h1>
@@ -1665,16 +1675,6 @@
                             <span>Bell-in-circle — Blue on light, White on dark</span>
                         </div>
                     </div>
-                </div>
-                <div class="hero-right">
-                    <!-- Large Bell mark on grey-green -->
-                    <svg width="280" height="280" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <g fill-rule="evenodd" clip-rule="evenodd">
-                            <path fill="transparent" d="M0 0h192.756v192.756H0V0z" />
-                            <path fill="#2B8FD8"
-                                d="M96.378 189.922c-51.652 0-93.543-41.893-93.543-93.544 0-51.652 41.892-93.543 93.543-93.543s93.544 41.892 93.544 93.543-41.893 93.544-93.544 93.544zm.012-16.301c42.639 0 77.233-34.592 77.233-77.232 0-42.639-34.594-77.231-77.233-77.231S19.158 53.75 19.158 96.389c0 42.64 34.593 77.232 77.232 77.232zm58.331-65.656l-.021 26.508-48.078.074-.01 13.023H86.304l-.11-13.023-48.037.271.038-26.869c11.471-2.162 14.738-9.426 15.294-16.027l2.682-31.802c.579-8.305 7.003-12.964 13.155-13.739 12.805-1.611 16.256-.941 16.258-1.086l.142-11.43h21.462l.141 11.443c4.348.108 12.623.649 16.258 1.073 8.469.987 12.643 7.646 13.156 13.739l2.682 31.802c.286 14.129 15.3 16.277 15.296 16.043zm-84.406-12c-1.365 14.533-11.31 16.349-11.31 16.435l-.032 4.418h74.896l.057-4.59c-9.99-4.709-10.762-10.42-11.279-15.918l-2.299-24.486c-.258-6.276-4.973-8.872-9.469-9.214a190.244 190.244 0 0 0-14.414-.565c-4.817 0-9.634.2-14.414.565-4.157.056-8.84 2.512-9.469 9.214l-2.267 24.141z" />
-                        </g>
-                    </svg>
                 </div>
             </div>
             <!-- Hero stripe bar -->
@@ -1761,6 +1761,58 @@
                     </div>
                 </div>
 
+                <!-- Secondary palette row: dark variants + red -->
+                <p class="caption mb-16" style="margin-top: 40px;">Secondary &amp; Dark Variants</p>
+                <div class="color-grid">
+                    <!-- Grey-Green Dark -->
+                    <div class="color-swatch">
+                        <div class="swatch-block" style="background:#5B6B50;"></div>
+                        <div class="swatch-info">
+                            <div class="swatch-name">Grey-Green Dark</div>
+                            <div class="swatch-hex">#5B6B50</div>
+                            <div class="swatch-specs">
+                                <div><b>var</b> --gg-dark</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blue Dark -->
+                    <div class="color-swatch">
+                        <div class="swatch-block" style="background:#1958d2;"></div>
+                        <div class="swatch-info">
+                            <div class="swatch-name">Blue Dark</div>
+                            <div class="swatch-hex">#1958d2</div>
+                            <div class="swatch-specs">
+                                <div><b>var</b> --blue-dark</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ochre Dark -->
+                    <div class="color-swatch">
+                        <div class="swatch-block" style="background:#a55716;"></div>
+                        <div class="swatch-info">
+                            <div class="swatch-name">Ochre Dark</div>
+                            <div class="swatch-hex">#a55716</div>
+                            <div class="swatch-specs">
+                                <div><b>var</b> --ochre-dark</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bell Red -->
+                    <div class="color-swatch">
+                        <div class="swatch-block" style="background:#e94862;"></div>
+                        <div class="swatch-info">
+                            <div class="swatch-name">Bell Red</div>
+                            <div class="swatch-hex">#e94862</div>
+                            <div class="swatch-specs">
+                                <div><b>var</b> --red</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- CSS Variables reference -->
                 <div style="border-top: 1px solid var(--light); padding-top: 40px;">
                     <p class="caption mb-16">CSS Variables</p>
@@ -1784,7 +1836,8 @@
                         <div style="font-size:12px; line-height:1.9;">
                             <span class="token">--dark</span><br>
                             <span class="token">--mid</span><br>
-                            <span class="token">--light</span>
+                            <span class="token">--light</span><br>
+                            <span class="token">--red</span>
                         </div>
                     </div>
                 </div>
